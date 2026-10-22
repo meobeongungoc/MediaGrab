@@ -6,7 +6,7 @@ internal static class Launcher {
     [STAThread]
     private static int Main(string[] args) {
         string root = AppDomain.CurrentDomain.BaseDirectory;
-        string target = Path.Combine(root, @"releases\0.8.1\MediaGrab\MediaGrab.exe");
+        string target = Path.Combine(root, @"releases\0.8.2\MediaGrab\MediaGrab.exe");
         bool check = args.Length == 1 && args[0] == "--self-test";
         try {
             if (!File.Exists(target)) throw new FileNotFoundException();

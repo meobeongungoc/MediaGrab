@@ -1,8 +1,8 @@
 @echo off
 setlocal
 cd /d "%~dp0"
-if exist "releases\0.8.1\MediaGrab\MediaGrab.exe" (
-    start "" "%~dp0releases\0.8.1\MediaGrab\MediaGrab.exe"
+if exist "releases\0.8.2\MediaGrab\MediaGrab.exe" (
+    start "" "%~dp0releases\0.8.2\MediaGrab\MediaGrab.exe"
     exit /b
 )
 if exist ".venv\Scripts\pythonw.exe" (

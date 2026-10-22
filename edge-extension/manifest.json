@@ -1,7 +1,7 @@
 {
   "manifest_version": 3,
   "name": "MediaGrab Edge Bridge",
-  "version": "0.8.1",
+  "version": "0.8.2",
   "description": "Share your current YouTube session with MediaGrab on this computer when downloading.",
   "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA14jmgtb3QE9SWBCuRxkmUVI79MpXNHYWGiRiY0CN8UcbPSq0MBQK8x1Bsx8kcPRHyUxhDCtTDYHH4tJ3w7okVsTBMSaxdU1WiZiONVX/4GNgmwCHMDmrIb7QIHmgp0muXqUbLFQKqlaiHzC0FIF0H/m+6VXTWA+m3K2mEna9AqOPgkW8daLsa3LSdOulh0xx4wuRZHEz2VjW98o7Tog+ce6i+T0ffLs8RaTMNaXbChXjay5WspB4QW5wZbrLQi2JwKunOUMKoOaFONLAQW9atFdgrNnTXFcy08gfJdB2BIXkqKRIHOTsjBFStQ0Sd9IDACT1KzOaut6YxwzjdfBDNQIDAQAB",
   "permissions": [

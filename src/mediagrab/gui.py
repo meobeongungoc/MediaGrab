@@ -31,7 +31,7 @@ def command(mode: str = '') -> list[str]:
 class App(ctk.CTk):
     def __init__(self) -> None:
         super().__init__()
-        self.title('MediaGrab 0.8.1 — Video and Podcast Downloader')
+        self.title('MediaGrab 0.8.2 — Video and Podcast Downloader')
         scale = self._get_window_scaling()
         self.geometry(f'{int(min(1060, self.winfo_screenwidth()/scale - 60))}x{int(min(800, self.winfo_screenheight()/scale - 80))}')
         self.minsize(680, 580)
@@ -84,7 +84,7 @@ class App(ctk.CTk):
         ctk.CTkButton(session_tools, text='Edge setup', width=95, command=self.setup_edge).pack(side='left')
         self.option_fields=[]
         for label, control in [('Source',self.source),('Save as',self.mode),('Quality',self.quality),('Login',self.browser),('Browser profile (optional)',self.profile),('Session',session_tools)]:
-            caption=ctk.CTkLabel(self.options,text=label,anchor='w')
+            caption=ctk.CTkLabel(self.options,text=label,anchor='w',height=18)
             caption._skin_role='muted'
             self.option_fields.append((caption,control))
         self._option_columns=0
@@ -141,8 +141,8 @@ class App(ctk.CTk):
         for column in range(3): self.options.grid_columnconfigure(column,weight=1 if column<columns else 0)
         for index,(label,control) in enumerate(self.option_fields):
             row,column=divmod(index,columns)
-            label.grid(row=row*2,column=column,sticky='ew',padx=12,pady=(7,0))
-            control.grid(row=row*2+1,column=column,sticky='ew',padx=12,pady=(0,9))
+            label.grid(row=row*2,column=column,sticky='ew',padx=12,pady=(4,0))
+            control.grid(row=row*2+1,column=column,sticky='ew',padx=12,pady=(0,5))
 
     def _style_auxiliary(self,event):
         if isinstance(event.widget,ctk.CTkToplevel):

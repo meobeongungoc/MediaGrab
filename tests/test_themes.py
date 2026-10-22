@@ -61,12 +61,15 @@ def test_saved_font_and_theme_survive_reload_and_reject_secret_keys(app):
 
 
 def test_narrow_and_wide_options_reflow_without_hiding_controls(app):
-    app.geometry('680x780');app.update()
+    app.geometry('680x580');app.update()
     assert app._option_columns==2
     for _,control in app.option_fields:
         assert control.winfo_ismapped()
         assert control.winfo_x()>=0
         assert control.winfo_x()+control.winfo_width() <= app.options.winfo_width()+2
+    assert app.log.winfo_height()>=20
+    assert app.rows.master.winfo_height()>=20
+    assert app.log.winfo_rooty()+app.log.winfo_height() <= app.winfo_rooty()+app.winfo_height()
     app.geometry('1060x780');app.update()
     assert app._option_columns==3
     assert app.panes.panes()

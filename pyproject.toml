@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "mediagrab"
-version = "0.8.1"
+version = "0.8.2"
 description = "Personal Windows video and podcast downloader"
 requires-python = ">=3.13"
 dependencies = ["yt-dlp[default]>=2026.8.19", "customtkinter>=6,<7", "defusedxml>=0.7,<1", "requests>=2.32,<3", "Pillow>=11,<13"]
