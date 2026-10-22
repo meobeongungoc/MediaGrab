@@ -1,0 +1,24 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "mediagrab"
+version = "0.8.1"
+description = "Personal Windows video and podcast downloader"
+requires-python = ">=3.13"
+dependencies = ["yt-dlp[default]>=2026.8.19", "customtkinter>=6,<7", "defusedxml>=0.7,<1", "requests>=2.32,<3", "Pillow>=11,<13"]
+
+[project.optional-dependencies]
+test = ["pytest>=9,<10"]
+build = ["pyinstaller>=6.22,<7"]
+
+[project.scripts]
+mediagrab = "mediagrab.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = ["tests"]

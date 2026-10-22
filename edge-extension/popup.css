@@ -1,0 +1,14 @@
+body { --background: #0c151e; --accent: #3478d4; width: 340px; padding: 16px; font: 14px/1.5 system-ui, sans-serif; background: var(--background); color: #f4f7fb; }
+body[data-theme="Warm Neutral (Beige/Brown)"] { --background: #12161b; --accent: #c7a681; }
+body[data-theme="Green Accent"] { --background: #0b191d; --accent: #589d7c; }
+body[data-theme="Purple Accent"] { --background: #131320; --accent: #875bb6; }
+img { vertical-align: middle; }
+select { max-width: 240px; padding: 5px; background: #242832; color: #f4f7fb; border: 1px solid #56606e; }
+h1 { font-size: 19px; margin-top: 0; }
+button { padding: 10px; margin: 5px 4px 5px 0; border: 0; border-radius: 6px; cursor: pointer; }
+#connect { background: var(--accent); color: #fff; }
+#status { min-height: 44px; color: #a8d9ff; }
+.note { font-size: 12px; color: #c4cdd9; }
+
+body[data-theme="Warm Neutral (Beige/Brown)"] #connect, body[data-theme="Green Accent"] #connect { color: #141c22; }
+button { border: 1px solid #3b4b5b; background-image: linear-gradient(#ffffff0c, #00000012); }

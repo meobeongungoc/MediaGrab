@@ -1,0 +1,27 @@
+cookies*.txt
+logs/
+downloads/
+*.zip
+.venv/
+__pycache__/
+.pytest_cache/
+*.pyc
+build/
+dist/
+
+*.egg-info/
+
+.updates/
+mediagrab-settings.json
+
+releases/
+.checkpoints/
+samples/
+
+# Local executables, diagnostics and personal instructions are not source artifacts.
+*.exe
+*.dll
+*.pdb
+*.spec
+/*.md
+/tests/live_cookie_check.py
